@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { Decimal, TickerTable } from '../../components';
 import {
+    useCurrenciesFetch,
     useMarketsFetch,
     useMarketsTickersFetch,
     useRangerConnectFetch,
@@ -12,6 +13,7 @@ import {
     selectMarkets,
     selectMarketTickers,
     setCurrentMarket,
+    selectCurrencies,
     selectUserInfo,
 } from '../../modules';
 
@@ -26,6 +28,7 @@ const defaultTicker = {
 };
 
 const MarketsTableComponent = props => {
+    useCurrenciesFetch();
     useMarketsFetch();
     useMarketsTickersFetch();
     useRangerConnectFetch();
@@ -33,6 +36,7 @@ const MarketsTableComponent = props => {
     const dispatch = useDispatch();
     const markets = useSelector(selectMarkets);
     const marketTickers = useSelector(selectMarketTickers);
+    const currencies = useSelector(selectCurrencies);
     const userData = useSelector(selectUserInfo);
     const [currentBidUnit, setCurrentBidUnit] = React.useState('');
 
@@ -103,6 +107,7 @@ const MarketsTableComponent = props => {
             markets={filteredMarkets}
             redirectToTrading={handleRedirectToTrading}
             setCurrentBidUnit={setCurrentBidUnit}
+            currencies={currencies}
         />
     );
 };

@@ -69,7 +69,7 @@
     line-height: 18px;
     text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     user-select: none;
     width: 270px;
 
@@ -163,9 +163,6 @@
     flex: 1;
     justify-content: center;
     background: url(assets/images/landing/MarketsBG.svg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 
     &__wrap {
@@ -237,9 +234,6 @@
 
   &__register {
     background: url(assets/images/landing/TradingRegister.svg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 
     &-content {
@@ -265,6 +259,10 @@
 
       h2 {
         margin-bottom: 36px;
+      }
+
+      .landing-button {
+        width: 154px;
       }
     }
   }
@@ -385,6 +383,7 @@
 
         .landing-button {
           margin-top: 36px;
+          width: 154px;
         }
       }
     }
@@ -502,14 +501,7 @@
             cursor: pointer;
             height: 25px;
             margin: 12px;
-            opacity: 0.5;
-            transition: 0.2s linear;
             width: 25px;
-
-            &:hover {
-              opacity: 1;
-              transition: 0.2s linear;
-            }
           }
         }
       }

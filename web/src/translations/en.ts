@@ -106,11 +106,13 @@ export const en = {
     /* Markets Table */
     'page.body.marketsTable.filter.all': 'All',
     'page.body.marketsTable.header.pair': 'Market',
+    'page.body.marketsTable.header.asset': 'Asset',
     'page.body.marketsTable.header.lastPrice': 'Last Price',
     'page.body.marketsTable.header.change': '24 Change',
     'page.body.marketsTable.header.high': '24  high',
     'page.body.marketsTable.header.low': '24 low',
     'page.body.marketsTable.header.volume': '24 Volume',
+    'page.body.marketsTable.button.trade': 'Trade',
 
 
     /* Landing */
@@ -118,7 +120,7 @@ export const en = {
     'page.body.landing.header.button2': 'log in',
     'page.body.landing.header.button3': 'register',
 
-    'page.body.landing.marketInfo.title.text1': 'Welcome to Baseapp.',
+    'page.body.landing.marketInfo.title.text1': 'Welcome to Chainpry.',
     'page.body.landing.marketInfo.title.text2': 'Buy, sell and trade digital currency.',
     'page.body.landing.marketInfo.title.button': 'start trading',
 
